@@ -105,9 +105,15 @@ h5.barber{
 
 
 
-
-footer {display: flex;
+footer {
+display: flex;
 flex-direction: row;
 justify-content: space-around ;
 align-content: center;
-color: white; }
+color: white; 
+background-color:   #242424;}
+
+.itens-footer{
+            display: flex;
+            flex-basis: calc(100%/3);
+}
