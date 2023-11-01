@@ -100,3 +100,14 @@ h5.barber{
     flex-flow: row nowrap;
     justify-content: space-around;
 }
+
+
+
+
+
+
+footer {display: flex;
+flex-direction: row;
+justify-content: space-around ;
+align-content: center;
+color: white; }
