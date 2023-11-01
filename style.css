@@ -89,3 +89,14 @@ h1{
 .corte-texto h4{
     text-align: center;
 }
+.barber h5{
+    text-transform: uppercase;
+    color:white;
+}
+h5.barber{
+    text-align: center;
+}
+#barbers{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
