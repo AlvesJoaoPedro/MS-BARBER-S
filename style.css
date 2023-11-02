@@ -1,3 +1,20 @@
+
+#paleta{color:#cfc8c1;
+     color: #151a1b
+     #69625c
+     #3e3833
+     #848c8c
+     #84848c
+     #4c5453
+     #8c6449
+     #4c4c54
+    
+    
+    }
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -105,15 +122,66 @@ h5.barber{
 
 
 
-footer {
-display: flex;
-flex-direction: row;
-justify-content: space-around ;
-align-content: center;
-color: white; 
-background-color:   #242424;}
 
-.itens-footer{
-            display: flex;
-            flex-basis: calc(100%/3);
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-content: center;
+    color: white; 
+    background-color:#242424;
+    border-top: solid #8c6449 7px ; 
+    }
+
+footer section{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-basis: calc(100%/3);
+
+
+       
+          
 }
+
+footer section p {flex-wrap: wrap;}
+footer section h5 {
+     align-items: center;
+    font-size: 24px;}
+footer section  a{text-decoration: none;
+color: white;}
+footer section p a:hover{ 
+            color: #8c6449;
+           
+            display: block;
+            transform: scale(1,1);
+           
+            }
+            
+footer section p.social {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: center;
+          
+
+            
+}
+
+
+
+
+#mol {
+    margin-left: 10px ; 
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 3px ;}
+
+#miif {
+    text-align: center;
+}
+    
