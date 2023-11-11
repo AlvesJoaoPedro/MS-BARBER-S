@@ -97,18 +97,50 @@ h1{
     margin-bottom: 20px;
     background-color: #242424;
 }
+
+.abrangente{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+.cortes-pedidos{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    min-width:60%;
+    flex-basis: 60%;
+    
+}
+
+
+
 .corte{
     display: flex;
-    flex-flow: row nowrap;
+    align-content: space-around;
+    justify-content: center;
+    margin: 1%; 
+    flex-basis: calc(60%/6 );
     background-color: #242424;
-    margin-bottom: 1%;
-    width: 60%;
-    margin-left: 1%;
-    padding: 2%;
-    border: 1px solid #242424;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 3px solid #4714d3;
     border-radius: 6px;
-    color: #e0e0e0e7;
+    color: #ff0000e7;
+    
 }
+
+/*
 .corte h4{
     display: inline-block;
     text-align: center;
@@ -123,31 +155,96 @@ h1{
     text-align: center;
 }
 
-#barbers{
+
+*/
+
+.sobre{
+    color:white;
+    flex-basis: 40%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background-color: #242424;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #141414; ;
+   
+    align-content: space-around;
+    max-width: 40%;
+    min-width: 30%;
+}
+ 
+.sobre img{display: block;
+margin:0 auto;}
+
+
+.sobre h5{font-size: 50px;
+    text-align: center;
+    flex-basis: 30%;
+    align-self: center;
 }
 
-div.barber{
-    width: 100%;
-    margin: 5%;
-    flex-flow: row wrap;
-}
-div.barber img{
-    margin-left: 15%;
-}
-.barber h5, a{
-    text-transform: uppercase;
-    color:white;
+
+.sobre p {font-size: 20px;
+margin-left: 10px;
+margin-right: 10px;}
+
+.border-barbers {
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    border: solid #242424;
+    min-height: 50px;
     text-align: center;
-    font-size: 2em;
-    text-decoration: none;
+    padding:10px;
+    background-color:  #242424;
 }
+
+.border-barbers h4 {font-size: 40px;
+color: whitesmoke;}
+
+
+
+#barbers
+{display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+min-height: 350px;
+background-color:  #3e3833;
+margin: 0 auto;
+}
+
+div.barber {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: calc(100/3);
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    border: solid  #3e3833;
+    max-width: 250px;
+    background-color: white;
+
+
+}
+
+
+.barber img {display: flex;
+flex-basis: 50%;}
+
+.barber h4 { flex-basis: 25%;}
+
+
+
+
+.barber h5 {font-size: 30px ; 
+   }
+
+.barber a {text-decoration: none;
+    color: white;}
 
 
 
