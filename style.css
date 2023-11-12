@@ -42,7 +42,7 @@ nav{
     z-index: 1;
     position: absolute;
     width: 95%;
-    margin-left: 2%;
+    margin-left: 1%;
     justify-content: center;
 }
 nav ul{
@@ -313,68 +313,8 @@ div.social a{
     text-align: center;
 }
 
-/*tablet*/
-@media screen and (max-width: 768px){
-    #image{
-        background: url(imgs/header-tablet.jpg) no-repeat;
-    }
-    header{
-        height: 550px;
-    }
-    nav{
-        width: 100%;
-    }
-    div#barbers{
-        flex-flow: row wrap;
-    }
-    .sobre h5{
-        font-size: 1.3em;
-    }
-}
+
 /*mobile*/
-
-
-@media screen and (max-width: 1339px){
-    #barbers{
-        flex-flow: row;
-    }
-
-}
-@media screen and (min-width: 769px){
-    nav{
-        margin-top: 50px;
-        z-index: 1;
-        position: absolute;
-        width: 95%;
-        justify-content: center;
-    }
-    nav ul{
-        display: flex;
-        list-style-type: none;
-        background-color: #252525;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 6px;
-    }
-}
-@media screen and (max-width: 880px){
-    nav ul{
-        margin-left: 5%;
-        width:90%;
-    }
-    #image{
-        background: url(imgs/768-header-img.jpg) no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    div.sobre{
-        max-height: 900px;
-    }
-    div.sobre p{
-        font-size: 1em;
-}
-}
-
 
 /*mobile*/
 @media screen and (max-width: 425px){
@@ -413,7 +353,9 @@ div.social a{
         background: url(imgs/320.jpg) no-repeat;
         
     }
-
+    nav ul{
+        margin-left: 3%;
+    }
     nav ul.flexblox{
         display: flex;
         flex-direction: row;
@@ -449,28 +391,92 @@ div.social a{
 
 }
     
-.corte img{width: 89px;
+.corte img{width: 70px;
 margin-left: 4px;}
 
-div.sobre{max-width: 310px;
+div.sobre{min-width: 310px;
     text-align: center;
-    
+    border: none;
 }
 
-div.sobre p {width: 300px;}
-
+div.sobre p {
+    width: 300px;
+}
+.sobre p {
+    width: 300px;
+    text-align: justify;
+    font-size: 0.5em;
+}
+.sobre{
+    margin-left: -1%;
+    margin-top: 3%;
+    padding: 1%;
+}
 #barbers{display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-content: center;
 justify-content: center;}
-
-
-
-
+}
+/*tablet*/
+@media screen and (max-width: 768px){
+    #image{
+        background: url(imgs/header-tablet.jpg) no-repeat;
+    }
+    header{
+        height: 550px;
+    }
+    nav{
+        width: 100%;
+    }
+    div#barbers{
+        flex-flow: row wrap;
+    }
+    .sobre h5{
+        font-size: 1.3em;
+    }
 }
 
+@media screen and (min-width: 769px){
+    nav{
+        margin-top: 50px;
+        z-index: 1;
+        position: absolute;
+        width: 95%;
+        justify-content: center;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        background-color: #252525;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 6px;
+    }
+}
+@media screen and (max-width: 880px){
+    nav{
+        min-width: 60%;
+        max-width: 90%;
+    }
+    #image{
+        background: url(imgs/768-header-img.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    div.sobre{
+        max-height: 900px;
+    }
+    div.sobre p{
+        font-size: 1em;
+}
+}
+@media screen and (max-width: 1339px){
+    #barbers{
+        flex-flow: row;
+    }
 
+}
 
 
 
