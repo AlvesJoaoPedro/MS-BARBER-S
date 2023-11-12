@@ -41,8 +41,7 @@ nav{
     margin-top: 50px;
     z-index: 1;
     position: absolute;
-    width: 95%;
-    margin-left: 1%;
+    min-width: 90%;
     justify-content: center;
 }
 nav ul{
@@ -347,14 +346,17 @@ div.social a{
     }
 
     
-
+    h1{
+        font-size: 1.2em;
+    }
 
     #image{
         background: url(imgs/320.jpg) no-repeat;
         
     }
     nav ul{
-        margin-left: 3%;
+        margin-right: 6%;
+        min-width: 90%;
     }
     nav ul.flexblox{
         display: flex;
@@ -428,6 +430,7 @@ justify-content: center;}
     }
     nav{
         width: 100%;
+        margin-left: 15%;
     }
     div#barbers{
         flex-flow: row wrap;
@@ -442,7 +445,7 @@ justify-content: center;}
         margin-top: 50px;
         z-index: 1;
         position: absolute;
-        width: 95%;
+        width: 100%;
         justify-content: center;
     }
     nav ul{
@@ -453,11 +456,14 @@ justify-content: center;}
         align-items: center;
         border-radius: 6px;
     }
+    div.abrangente{
+        margin: 0;
+    }
 }
 @media screen and (max-width: 880px){
     nav{
-        min-width: 60%;
-        max-width: 90%;
+        min-width: 70%;
+        max-width: 80%;
     }
     #image{
         background: url(imgs/768-header-img.jpg) no-repeat;
@@ -470,12 +476,17 @@ justify-content: center;}
     div.sobre p{
         font-size: 1em;
 }
+div.abrangente{
+    margin: 0;
+}
 }
 @media screen and (max-width: 1339px){
     #barbers{
         flex-flow: row;
     }
-
+    div.abrangente{
+        margin: 0;
+    }
 }
 
 
