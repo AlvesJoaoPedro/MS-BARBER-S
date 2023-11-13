@@ -33,12 +33,16 @@ body{
 }
 header{
     height: 650px;
-    margin-top: 20px;
+    display: flex;
     width: 100%;
+    align-content: center;
+    justify-content: center;
+    
+    
 }
 
 nav{
-    margin-top: 50px;
+    margin-top: 50px ;
     z-index: 1;
     position: absolute;
     min-width: 90%;
@@ -48,8 +52,11 @@ nav ul{
     display: flex;
     list-style-type: none;
     background-color: #252525;
-    justify-content: space-around;
+    justify-content: space-around ;
+   
+    
     align-items: center;
+    
     border-radius: 6px;
 }
 nav ul li{
@@ -286,8 +293,8 @@ color: white;}
 footer section p a:hover{ 
             color: #8c6449;
            
-            display: block;
-            transform: scale(1,1);
+            
+            
            
             }
             
@@ -300,7 +307,11 @@ footer section div.social {
 div.social a{
     margin-top: 10px;
     margin-right: 8px;
+    color: white;
+
 }
+
+div.social a:hover{ color: #8c6449;}
 
 #mol {
     margin-left: 10px ; 
@@ -323,26 +334,31 @@ div.social a{
 
     body{
     
-    margin-left: 5px;}
+    }
 
     header {height: 450px;}
 
     footer{height: px;}
 
+    nav {width: 100%;}
 
     footer{display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: center;
             width: 95%;
-            font-size: 0.8em;
+            font-size: 1em;
+            padding: 3px;
             
         
         }
+
+
     footer section p{
         padding-left: 3px ;
-        font-size: 0.7em;
+        font-size: 0.8em;
+        padding: 3px;
     }
 
     
@@ -353,16 +369,13 @@ div.social a{
     #image{
         background: url(imgs/320.jpg) no-repeat;
         
-    }
-    nav ul{
-        margin-right: 6%;
-        min-width: 90%;
-    }
+} 
+
     nav ul.flexblox{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 150px;
+        max-width: 90%;
         flex-wrap: wrap;}
 
     
@@ -382,7 +395,8 @@ div.social a{
     justify-content: center;
     align-items: center;
     align-content: center;
-
+    justify-content: center;
+    width: 100%;
 }
 
     .cortes-pedidos{display: flex;
@@ -394,7 +408,7 @@ div.social a{
 }
     
 .corte img{width: 70px;
-margin-left: 4px;}
+}
 
 div.sobre{min-width: 310px;
     text-align: center;
@@ -420,6 +434,7 @@ flex-wrap: wrap;
 align-content: center;
 justify-content: center;}
 }
+
 /*tablet*/
 @media screen and (max-width: 768px){
     #image{
@@ -430,7 +445,7 @@ justify-content: center;}
     }
     nav{
         width: 100%;
-        margin-left: 15%;
+        
     }
     div#barbers{
         flex-flow: row wrap;
@@ -445,7 +460,7 @@ justify-content: center;}
         margin-top: 50px;
         z-index: 1;
         position: absolute;
-        width: 100%;
+        width: 70%;
         justify-content: center;
     }
     nav ul{
